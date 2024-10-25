@@ -1,67 +1,34 @@
-# Gerador-de-arquivo-de-teste
-Script que gera arquivo de teste 
 
-# Gerador de Arquivo para Teste de Rede
+# Gerador de Arquivo de Teste
 
-Este script em lote (`.bat`) é utilizado para criar um arquivo de tamanho especificado pelo usuário. É útil para testar a transferência de arquivos em uma rede, medir desempenho, ou qualquer outro cenário que necessite de arquivos de tamanhos específicos.
+## Descrição
+Este projeto contém um script em batch (`.bat`) que automatiza a criação de arquivos de teste, úteis para simular cenários de desenvolvimento, testes de sistemas, e validação de fluxos que dependem de arquivos gerados automaticamente.
 
-## Como Usar
+## Funcionalidades
+- **Geração de Arquivos de Teste**: Cria automaticamente arquivos de teste com nomes e conteúdos configuráveis.
+- **Personalização**: Personalize o nome, tamanho e conteúdo dos arquivos conforme necessário para diferentes cenários de teste.
+- **Automatização Simples**: Com o script `.bat`, você pode rapidamente gerar múltiplos arquivos sem precisar de scripts complexos ou software adicional.
 
-### Pré-requisitos
+## Estrutura do Projeto
+- **Batch Script** (`Gerador de arquivo de teste.bat`): Script principal para criação de arquivos de teste. Este arquivo contém comandos para gerar um ou mais arquivos com configurações personalizadas.
 
-- Sistema operacional Windows
-- Permissões de administrador (necessárias para o comando `fsutil`)
-
-### Passos para execução
-
-1. **Clone o repositório ou baixe o script**:
-
-   Se você clonou o repositório, navegue até o diretório onde o script está localizado. Caso contrário, salve o código abaixo em um arquivo chamado `gerar_arquivo.bat`.
-
-2. **Abra o Prompt de Comando**:
-   - Pressione `Win + R`, digite `cmd` e pressione `Enter`.
-
-3. **Navegue até o diretório onde o script está salvo**:
-   - Use o comando `cd` para mudar para o diretório apropriado. Por exemplo:
-     ```sh
-     cd C:\caminho\para\o\diretorio\do\script
+## Uso
+1. **Baixe o projeto** e descompacte a pasta (se necessário).
+2. Abra o arquivo `Gerador de arquivo de teste.bat` em um editor de texto para personalizar as configurações do arquivo, como o nome ou conteúdo.
+3. **Execute o script**:
+   - No Windows, clique duas vezes no arquivo `Gerador de arquivo de teste.bat`.
+   - Ou abra o Prompt de Comando, navegue até a pasta do projeto e execute o comando: 
+     ```cmd
+     Gerador de arquivo de teste.bat
      ```
+4. Os arquivos de teste serão gerados na pasta especificada.
 
-4. **Execute o script**:
-   - Digite o nome do arquivo do script e pressione `Enter`. Por exemplo:
-     ```sh
-     gerar_arquivo.bat
-     ```
+## Estrutura do Código
+- **Comandos de Criação**: Utiliza comandos do Windows para criar arquivos e configurar o conteúdo desejado.
+- **Personalização**: Edite diretamente no arquivo `.bat` as variáveis de nome, caminho, e conteúdo para definir os detalhes dos arquivos gerados.
 
-5. **Siga as instruções no Prompt de Comando**:
-   - O script solicitará que você insira o nome do arquivo e o tamanho em bytes.
+## Licença
+Este projeto está licenciado sob a licença MIT.
 
-### Exemplo de Uso
-
-Suponha que você deseja criar um arquivo chamado `teste.txt` com 1 MB de tamanho (1 MB = 1048576 bytes):
-
-1. Execute o script:
-   ```sh
-   gerar_arquivo.bat
-
-   2. Digite o nome do arquivo quando solicitado:
-   Escreva o nome do arquivo: teste.txt
-   
-   3. Digite o tamanho do arquivo em bytes quando solicitado:
-   Escreva o tamanho do arquivo, lembrando que é em bytes: 1048576
-
-   O script criará um arquivo chamado teste.txt com 1 MB de tamanho no diretório atual.
-
-   **Notas**
-Permissões: 
-Este script pode requerer permissões de administrador para ser executado corretamente. Se você encontrar problemas, tente executar o Prompt de Comando como administrador.
-Sistema de Arquivos: O comando fsutil funciona em sistemas de arquivos NTFS. Certifique-se de que a unidade onde o arquivo será criado está formatada como NTFS.
-Tamanho em Bytes: Lembre-se de especificar o tamanho do arquivo em bytes. Por exemplo, 1 MB = 1048576 bytes, 1 GB = 1073741824 bytes.
-
-**Licença**
-Este projeto está licenciado sob os termos da MIT License.
-
-
-Este arquivo README fornece instruções detalhadas sobre como usar o script, um exemplo prático, e inclui o código do script para referência. Adapte o caminho e o nome do arquivo conforme necessário para o seu ambiente.
-
-   
+## Contribuições
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request para melhorias ou correções.
